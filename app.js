@@ -46,10 +46,12 @@ app.post('/captureImg', (req, res) => {
                 }
             }
             let urlEndPoint = "";
-            return axios.post(urlEndPoint, {"tag": "test"}).then((ress) => {
-                console.log(ress);
-                res.send(ress);
-            })
+            // return axios.post(urlEndPoint, {"tag": "test"}).then((ress) => {
+            //     console.log(ress);
+            //     res.send(ress);
+            // })
+            console.log (max_tag);
+            res.send(max_tag);
         }).catch((err) => {
             console.log(err);
             res.send(err);
