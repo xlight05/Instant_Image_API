@@ -17,11 +17,6 @@ cloudinary.config({
     api_secret: 'F6-z9RKRSc4nznItFcVx2kxeDsc'
 });
 
-// var instance = axios.create({
-//     'Prediction-Key':'776c6c0e4f0d4065aa348056241146e0',
-//     'Training-key' : '8bc0a3283f534af1a556c26d53b7f333'
-// });
-
 
 axios.defaults.headers.post['Prediction-Key'] = '776c6c0e4f0d4065aa348056241146e0';
 axios.defaults.headers.post['Training-key'] = '8bc0a3283f534af1a556c26d53b7f333';
@@ -45,13 +40,11 @@ app.post('/captureImg', (req, res) => {
                     max_tag = resp.data.Predictions[i].Tag;
                 }
             }
-            let urlEndPoint = "";
-            // return axios.post(urlEndPoint, {"tag": "test"}).then((ress) => {
-            //     console.log(ress);
-            //     res.send(ress);
-            // })
-            console.log (max_tag);
-            res.send(max_tag);
+            let urlEndPoint = "https://intense-inlet-86834.herokuapp.com/api/search";
+            return axios.post(urlEndPoint, {"query" : "yay"}).then((ress) => {
+                console.log (ress.data);
+                res.send(ress.data);
+            })
         }).catch((err) => {
             console.log(err);
             res.send(err);
