@@ -41,7 +41,7 @@ app.post('/captureImg', (req, res) => {
                 }
             }
             let urlEndPoint = "https://intense-inlet-86834.herokuapp.com/api/search";
-            return axios.post(urlEndPoint, {"query" : "yay"}).then((ress) => {
+            return axios.post(urlEndPoint, {"query" : max_tag}).then((ress) => {
                 console.log (ress.data);
                 res.send(ress.data);
             })
