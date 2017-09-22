@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.fashionista.isense_female">
+
+    <ImageButton
+        android:id="@+id/oval"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/oval_men"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/inverted_t"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/inverted_triangle_men"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/rectangle"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintLeft_toRightOf="@+id/inverted_t"
+        app:layout_constraintRight_toLeftOf="@+id/oval"
+        app:srcCompat="@drawable/rectangle_men"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/rhomboid"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/romboid_men"
+        android:layout_marginRight="48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="139dp" />
+
+    <ImageButton
+        android:id="@+id/triangle"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="138dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rhomboid"
+        app:srcCompat="@drawable/triangle_men" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Select Your Body Style"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

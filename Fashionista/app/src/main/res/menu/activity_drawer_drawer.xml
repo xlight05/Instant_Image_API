@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_collection"
+        android:title="My Collection" />
+    <item
+        android:id="@+id/i_sense"
+        android:title="iSense" />
+    <item
+        android:id="@+id/my_feed"
+        android:title="MyFeed" />
+    <item
+        android:id="@+id/search"
+        android:title="Search" />
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/about"
+                android:title="About" />
+            <item
+                android:id="@+id/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/feedback"
+                android:title="Feedback" />
+
+        </menu>
+    </item>
+
+</menu>
